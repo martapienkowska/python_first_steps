@@ -82,3 +82,14 @@ INSERT INTO Products(Code,Name,Price,Manufacturer) VALUES(11,'Floppy disk1',5,6)
 ---wybierze wszystko, najlepsze rozwiązanie
 -- select 2 from ; - jeden wiersz
 -- select 2, Name from Products; - wiele wierszy
+
+
+---16. Select the name of each manufacturer along with the name and price of its most expensive product.
+select P.Price, P.Name, M.Name from Products P
+join Manufacturers M
+on P.Manufacturer = M.Code
+and P.Price =
+(
+  select max(P.Price) from Products P
+  where P.Manufacturer = M.Code
+);
