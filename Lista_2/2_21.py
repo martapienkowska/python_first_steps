@@ -11,7 +11,7 @@ def fun_1():
     print("Prawidłowy wynik")
     a = str(random.randint(1, 100))
     b = str(random.randint(1, 100))
-    return a, b
+
 
 
 choice = 0
