@@ -93,3 +93,4 @@ and P.Price =
   select max(P.Price) from Products P
   where P.Manufacturer = M.Code
 );
+
