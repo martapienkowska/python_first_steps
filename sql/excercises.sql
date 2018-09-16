@@ -93,3 +93,22 @@ and P.Price =
   select max(P.Price) from Products P
   where P.Manufacturer = M.Code
 );
+
+---17. Add a new product: Loudspeakers, $70, manufacturer 2.
+INSERT INTO Products(Code, Name, Price, Manufacturer)VALUES(11, 'Loudspeakers',70, 2);
+
+---18. Update the name of product 8 to "Laser Printer".
+UPDATE Products
+SET Name = 'Laser printer'
+Where Code = 8;
+
+---19. Apply a 10% discount to all products.
+UPDATE Products
+SET Price = 0.9*Price;
+
+
+---20. Apply a 10% discount to all products with a price larger than or equal to $120.
+UPDATE Products
+SET Price = 0.9*Price
+Where Price >= 120;
+
