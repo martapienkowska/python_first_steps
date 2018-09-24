@@ -19,3 +19,5 @@ elif fun_delta() == 0:
 else:
     print("delta<0, no solutions")
 
+    
+
