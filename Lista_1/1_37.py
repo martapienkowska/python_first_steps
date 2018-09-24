@@ -8,3 +8,4 @@ def polynomial(x, *a):
 polynomial(4, 2, 3, 5)
 polynomial(2, 1, 2, 3, 4)
 polynomial(2, 1, 0, 4)
+
