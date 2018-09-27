@@ -18,5 +18,3 @@ fun_1(dict_1, dict_2)
 fun_1(dict_1, dict_3)
 fun_1(dict_1, dict_4)
 fun_1(dict_1, dict_5)
-
-
