@@ -11,13 +11,17 @@ def fun_1(x, y):
             if i == i2:
                 d += 1
     if d != 0:
-        print(True)
         return True
 
+def check(x):
+    if x == True:
+        print("T")
+    else:
+        print("F")
 
-fun_1(list_1, list_2)
-fun_1(list_2, list_3)
-fun_1(list_1, list_4)
+check(fun_1(list_1, list_2))
+check(fun_1(list_2, list_3))
+check(fun_1(list_1, list_4))
 
 print("fun_2")
 
@@ -26,12 +30,8 @@ def fun_2(x, y):
     a = set(x)
     b = set(y)
     if len(a & b) != 0:
-        print(True)
         return True
 
-
-fun_2(list_1, list_2)
-fun_2(list_2, list_3)
-fun_2(list_1, list_4)
-
-
+check(fun_2(list_1, list_2))
+check(fun_2(list_2, list_3))
+check(fun_2(list_1, list_4))
