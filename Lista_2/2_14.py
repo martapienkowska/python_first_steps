@@ -9,3 +9,4 @@ for i in range(1, n + 1):
             dict_1[i].append(i2)
 
 print(dict_1)
+
