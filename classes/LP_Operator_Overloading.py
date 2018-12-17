@@ -1,9 +1,14 @@
 class MyList:
     def __init__(self, start=[]):
         self.data = start[:]
+        #[:] przechodzi przez wszystkie elementy listy, 
+        #zwraca drugą listę, która składa się z elementów listy start
 
     def __add__(self, other):
         return MyList(self.data + other.data)
+        #MyList, żeby zwracało instancję
+        #self.data "pierwsza" dane z instancji do której coś dodamy
+        #other.data służy do dodania danych z drugiej instancji
 
     def __getitem__(self, item):
         return self.data[item]
@@ -24,5 +29,6 @@ print(inst1.data)
 inst1.sort_met(True)
 print(inst1.data)
 inst3 = MyList([1, 2, 5, 66, 11, 22, 1])
+
 
 print(inst3[1::2])
